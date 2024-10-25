@@ -4,39 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Śląsk</title>
-    <link rel="stylesheet" href="style/header.css">
-    <link rel="stylesheet" href="style/footer.css">
-    <link rel="stylesheet" href="style/auth.css">
+    <link rel="stylesheet" href="style/main.css">
     <link rel="stylesheet" href="style/responsive.css">
 </head>
 <body>
     <!-- Nagłówek -->
-    <header>
+    <div id="header">
         <div class="container">
-            <div class="logo">
+            <div id="logo">
                 <a href="index.html">Śląsk</a>
             </div>
-            <nav>
+            <div id="nav">
                 <ul>
                     <li><a href="#">Ustawienia</a></li>
                 </ul>
-            </nav>
-            <div class="auth-buttons">
-                <a href="login.html" class="btn">Sign in</a>
-                <a href="signup.html" class="btn btn-primary">Sign up</a>
+            </div>
+            <div id="auth-buttons">
+                <div class="auth-buttons">
+                    <a href="login.html" class="btn">Sign in</a>
+                    <a href="register.html" class="btn btn-primary">Sign up</a>
+                </div>                
             </div>
         </div>
-    </header>
+    </div>
 
     <!-- Główna sekcja -->
-    <main>
-        <section class="hero">
+    <div id="main">
+        <div class="hero">
             <div class="container">
                 <h1>Śląsk</h1>
             </div>
-        </section>
+        </div>
 
-        <section class="features">
+        <div id="features">
             <div class="container">
                 <div class="feature">
                     <h2>1</h2>
@@ -51,14 +51,13 @@
                     <p>Test</p>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </div>
 
     <!-- Stopka -->
-    <footer>
+    <div id="footer">
         <div class="container">
             <div class="footer-links">
-                <a href="#"></a>
                 <a href="#">Privacy</a>
                 <a href="#">Security</a>
                 <a href="#">Contact</a>
@@ -67,6 +66,6 @@
                 <a href="#">Logo</a>
             </div>
         </div>
-    </footer>
+    </div>
 </body>
 </html>
