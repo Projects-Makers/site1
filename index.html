@@ -6,26 +6,28 @@
     <title>Śląsk</title>
     <link rel="stylesheet" href="style/main.css">
     <link rel="stylesheet" href="style/responsive.css">
+    <link rel="stylesheet" href="style/hamburger.css">
 </head>
 <body>
     <!-- Nagłówek -->
     <div id="header">
+        <div id="hamburger" class="hamburger-btn" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
         <div class="container">
             <div id="logo">
-                <a href="index.html">Śląsk</a>
-            </div>
-            <div id="nav">
-                <ul>
-                    <li><a href="#">Ustawienia</a></li>
-                </ul>
-            </div>
-            <div id="auth-buttons">
-                <div class="auth-buttons">
-                    <a href="login.html" class="btn">Sign in</a>
-                    <a href="register.html" class="btn btn-primary">Sign up</a>
-                </div>                
             </div>
         </div>
+    </div>
+
+    <!-- Menu -->
+    <div id="menu" class="menu">
+        <div class="close-btn" onclick="toggleMenu()">&times;</div>
+        <ul>
+            <li><a href="index.html">Strona główna</a></li>
+        </ul>
     </div>
 
     <!-- Główna sekcja -->
@@ -39,8 +41,7 @@
         <div id="features">
             <div class="container">
                 <div class="feature">
-                    <img src="mapa.png">
-                </div>
+                    <img src="mapa.png" alt="Mapa">
                 </div>
             </div>
         </div>
@@ -59,5 +60,16 @@
             </div>
         </div>
     </div>
+
+    <!-- Kod JavaScript na końcu dokumentu -->
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            const hamburger = document.getElementById('hamburger');
+            // Przełącz klasę 'open' dla menu i 'active' dla przycisku hamburgera
+            menu.classList.toggle('open');
+            hamburger.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
